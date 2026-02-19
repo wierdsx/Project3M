@@ -1,0 +1,111 @@
+@import url('fonts/main_font.css');
+
+* {
+    /* Сбрасывание стандартных стилей и добавление шрифтов */
+    margin: 0;
+    font-family: 'StratosSkyeng', sans-serif;
+}
+
+.content {
+    /* Эти два свойства нужны чтобы фон подстраивался на весь экран */
+    background-size: cover;
+    min-height: 100vh;
+    background-image: url(./images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;    
+}
+
+
+/* Класс для расположения элементов в 1 ряд */
+.in-one-line {
+    display: flex;
+    /* Отступ между элементами */
+    gap: 32px;
+}
+
+/* Класс для центрирования страницы */ 
+.center {
+    padding-left: calc(50% - 500px);
+    padding-right: calc(50% - 500px);
+} 
+
+/* a {
+    font-size: 38px;
+    margin: 20px;
+    display: block;
+    background-color: #894AFF;
+    color: white;
+    padding: 11px 30px;
+    border-radius: 50px;
+    position: absolute;
+    right: 60px;
+} */
+/* Кнопки навигации */
+.nav-link {
+    font-size: 38px;
+    background-color: #894AFF;
+    color: white;
+    padding: 11px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #6b3ad6;
+}
+
+/* Контейнер для навигации */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 120px);
+    z-index: 10;
+}
+
+/* Для страниц без абсолютного позиционирования */
+.nav-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 60px;
+    box-sizing: border-box;
+}
+
+/* Класс для обертки с относительным позиционированием */
+.relative-wrap {
+    position: relative;
+}
+
+h1 {
+    padding: right 128px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: left;
+}
+
+p {
+    font-size: 22px;
+}
+
+img {
+    width: 45%;
+    border-radius: 12px;
+    margin: 16px;
+}
+li {
+    font-size: 16px;
+}
